@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet"href="./css/style.css">
+
+    <!-- LINK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="bg-header">
+            <a class="t-decoration text-info" href="">Portfolio</a>
+            <a class="text-info" href="">Contact me</a>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- CONTENITORE CON FOTO -->
+
+        <div class="container-fluid bg-info justify-content-center">
+            <div class="row text-center">
+                <div class="col-12">
+                    <img class="bg-img mt-5" src="./img/undraw_profile_pic_ic5t.svg" alt="">
+                    <h1>Pinco Pallo</h1>
+                    <p>Web Designer</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- CONTENITORE CARD -->
+
+        <div class="container">
+            
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="mt-4">PORTFOLIO</h1>
+                </div>
+                
+            </div>
+            
+            <div class="row justify-content-center">
+                
+                <div class="col-sm-12 col-md-6 col-lg-4 mt-2 text-center">
+                    <div class="card">
+                        <img src="./img/cabin.png" alt="">
+                        <h4 class="mt-2">Cabin Website</h4>
+                        <div class="mb-3">
+                            <button type="button" class="me-3 btn btn-info">Preview</button>
+                            <button type="button" class="btn btn-outline-info">Visit Site</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-sm-12 col-md-6 col-lg-4  mt-2 text-center">
+                    <div class="card">
+                        <img src="./img/cake.png" alt="">
+                        <h4 class="mt-2">Cake Website</h4>
+                        <div class="mb-3">
+                            <button type="button" class="me-3 btn btn-info">Preview</button>
+                            <button type="button" class="btn btn-outline-info">Visit Site</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-sm-12 col-md-6 col-lg-4 mt-2 text-center">
+                    <div class="card">
+                        <img src="./img/circus.png" alt="">
+                        <h4 class="mt-2">Circus Website</h4>
+                        <div class="mb-3">
+                            <button type="button" class="me-3 btn btn-info">Preview</button>
+                            <button type="button" class="btn btn-outline-info">Visit Site</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            
+                <div class=" col-sm-12 col-md-6 col-lg-4  mt-2 text-center">
+                    <div class="card">
+                        <img src="./img/game.png" alt="">
+                        <h4 class="mt-2">Game Website</h4>
+                        <div class="mb-3">
+                            <button type="button" class="me-3 btn btn-info">Preview</button>
+                            <button type="button" class="btn btn-outline-info">Visit Site</button>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class=" col-sm-12 col-md-6 col-lg-4  mt-2 text-center">
+                    <div class="card">
+                        <img src="./img/safe.png" alt="">
+                        <h4 class="mt-2">Safe Website</h4>
+                        <div class="mb-3">
+                            <button type="button" class="me-3 btn btn-info">Preview</button>
+                            <button type="button" class="btn btn-outline-info">Visit Site</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-sm-12 col-md-6 col-lg-4 mt-2 text-center">
+                    <div class="card">
+                        <img src="./img/submarine.png" alt="">
+                        <h4 class="mt-2">Submare Website</h4>
+                        <div class="mb-3">
+                            <button type="button" class="me-3 btn btn-info">Preview</button>
+                            <button type="button" class="btn btn-outline-info">Visit Site</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORM DI CONTATTO -->
+
+        
+        <div class="container-form bg-info mt-5" onsubmit="buttonService(event)">
+            
+            <form class="row g-3 mt-5 pb-2 justify-content-center">
+
+                <div>
+                    <h1 class="text-center mb-3">WANT AND OFFER?</h1>
+                </div>
+                
+                <div class="col-lg-5 col-sm-12 col-md-6">
+                    <label for="inputFirstName4" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="inputFirstName4" placeholder="Enter your first name...">
+                </div>
+                <div class="col-lg-5 col-sm-12 col-md-5">
+                    <label for="inputLastName4" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="inputLastName4" placeholder="Enter your last name...">
+                </div>
+            
+            
+           
+                <div class="col-lg-5 col-sm-12 col-md-6">
+                    <label for="inputIEmailAddress" class="form-label">Email address</label>
+                    <input type="text" class="form-control" id="inputEmailAddress" placeholder="name@example.com">
+                </div>
+                
+                <div class="col-lg-5 col-sm-12 col-md-5">
+                    <label for="inputHoursRequested" class="form-label">Hours requested</label>
+                    <input type="text" class="form-control" id="hours" placeholder="Hours requested">
+                </div>
+                
+                <div class="col-lg-5 col-sm-12 col-md-6">
+                    <label for="inputState" class="form-label">Type of work</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Select the type of work</option>
+                        <option value="20.50">Front-End Developer</option>
+                        <option value="15.30">Back-End Developer</option>
+                        <option value="33.60">Project Analist</option>
+                    </select>
+                </div>
+                
+                <div class="col-lg-5 col-sm-12 col-md-5">
+                    <label for="inputDiscountCode6" class="form-label">Discount code</label>
+                    <input type="text" class="form-control" id="discount_coupon">
+                </div>
+
+                <div class="col-lg-10 col-sm-12 col-md-6 mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Specify your work commission..." rows="3"></textarea>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6 text-center mb-3">
+                    <button type="submit" class="btn btn-warning">Send</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="bg-footer text-center">
+            <div>
+                <p class="mt-3 text-white-50">LOCATION</p>
+            </div>
+            
+            <div>
+                <p class="bg-text">2215 John Daniel Drive <br> Clark, MO 65243</p>
+            </div>
+
+            <div>
+                <p class="bg-text">Copyright Your Website 2021</p>
+            </div>
+        </div>
+        
+
+    </footer>
+    
+    <!-- FILE JAVASCRIPT -->
+    <script src="../js/main.js"></script>
+
+    <!-- FILE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  
+    
+</body>
+</html> 
