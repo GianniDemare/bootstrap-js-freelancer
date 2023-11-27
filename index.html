@@ -123,9 +123,9 @@
         <!-- FORM DI CONTATTO -->
 
         
-        <div class="container-form bg-info mt-5" onsubmit="buttonService(event)">
+        <div class="container-form bg-info mt-5" id="formDiv">
             
-            <form class="row g-3 mt-5 pb-2 justify-content-center">
+            <form class="row g-3 mt-5 pb-2 justify-content-center" onsubmit="buttonService(event)">
 
                 <div>
                     <h1 class="text-center mb-3">WANT AND OFFER?</h1>
@@ -154,17 +154,18 @@
                 
                 <div class="col-lg-5 col-sm-12 col-md-6">
                     <label for="inputState" class="form-label">Type of work</label>
-                    <select id="inputState" class="form-select">
+                    <select id="typeChoice" class="form-select">
                         <option selected>Select the type of work</option>
-                        <option value="20.50">Front-End Developer</option>
-                        <option value="15.30">Back-End Developer</option>
-                        <option value="33.60">Project Analist</option>
+                        <option value="frontend">Front-End Developer</option>
+                        <option value="backend">Back-End Developer</option>
+                        <option value="analyst">Project Analist</option>
                     </select>
                 </div>
                 
                 <div class="col-lg-5 col-sm-12 col-md-5">
                     <label for="inputDiscountCode6" class="form-label">Discount code</label>
-                    <input type="text" class="form-control" id="discount_coupon">
+                    <input type="text" class="form-control" id="discountCode">
+                    <p id="discountMessage" class="d-none text-danger">Please enter a valid code</p>
                 </div>
 
                 <div class="col-lg-10 col-sm-12 col-md-6 mb-3">
@@ -176,6 +177,13 @@
                     <button type="submit" class="btn btn-warning">Send</button>
                 </div>
             </form>
+        </div>
+
+        <div id="finalContainer" class="d-none container-fluid text-center bg-info py-3">
+            <h2>Your offer is:</h2>
+            <p id="hoursId"></p>
+            <p id="workId"></p>
+            <p id="priceId"></p>
         </div>
     </main>
 
@@ -198,7 +206,7 @@
     </footer>
     
     <!-- FILE JAVASCRIPT -->
-    <script src="../js/main.js"></script>
+    <script src="./js/main.js"></script>
 
     <!-- FILE BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
